@@ -44,6 +44,7 @@ summary{display:list-item}
     max-width: 1600px;
     margin: 0 auto;
     background: #2f303a;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../img/header-background.jpg);
   }
   
   .section-hero-color {
@@ -175,6 +176,8 @@ summary{display:list-item}
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--portfolio-color-title);
+    display: flex;
+    align-items: center;
 
   }
   a.list-item-cheked {
@@ -735,3 +738,62 @@ summary{display:list-item}
 .section-texxt{
   text-align: center;
 }
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.header-contact-icons {
+  margin-right: 10px;
+  fill: currentColor;
+  
+}
+svg Attributes Style {
+  width: 10px;
+  height: 16px;
+}
+svg Attributes Style {
+  width: 70px;
+  height: 70px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.skill-list .skill-item .skill-wall {
+  background-color: var(--portfolio-button-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 120px;
+}
+
+.company-social-list .company-icon .company-social-icon {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--accent-color);}
+
+  .company-social-list {
+    display: flex;
+    margin-top: 16px;
+  }
+  .company-icon1 {
+    fill: var(--social-icon-color);
+  }
+
+.company-social-icon:hover .company-icon1n,
+.company-social-icon:focus .company-icon1 {
+  fill: var(--primary-white-color);
+}
+
+.company-icon + .company-icon {
+  margin-left: 10px;
+}
+.company-social-icon:hover,
+.company-social-icon:focus {
+  background-color: var(--accent-color);}
