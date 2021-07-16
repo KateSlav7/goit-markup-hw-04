@@ -1,6 +1,6 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #212121;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
   }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -9,7 +9,6 @@ body {
 html{-moz-tab-size:4;tab-size:4}
 html{line-height:1.15;-webkit-text-size-adjust:100%}
 body{margin:0}
-body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}
 hr{height:0;color:inherit}
 abbr[title]{text-decoration:underline dotted}
 b,strong{font-weight:bolder}
@@ -26,7 +25,7 @@ summary{display:list-item}
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
     --accent-color: #2196f3;
-    --primary-white-color: #ffffff;
+    -primary-white-color: #ffffff;
     --text-footer: #ffffff99;
     --border-color: #ececec;
     --border-portfolio-color: #eeeeee;
@@ -35,6 +34,8 @@ summary{display:list-item}
     --portfolio-color-title: #757575;
     --hero-background-color: #2f303a;
     --footer-item-color: rgba(255, 255, 255, 0.6);
+    --social-icon-color:#afb1b8;
+    --footer-icon-color: rgba(255, 255, 255, 0.1);
   }
   
   .section-hero-background {
@@ -79,7 +80,7 @@ summary{display:list-item}
   }
   
   .button-hero-section.primary {
-    color: var(--primary-white-color);
+    color: #ffffff;
     background-color: var(--accent-color);
   }
   
@@ -177,6 +178,9 @@ summary{display:list-item}
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--portfolio-color-title);
+    display: flex;
+    align-items: center;
+
   }
   a.list-item-cheked {
     color: #212121;
@@ -192,9 +196,8 @@ summary{display:list-item}
   }
   .list-item .current {
     color: #2196f3;
-    text-decoration: none; }
-
-  
+    text-decoration: none;
+  }
   
   .header-nav
     a:hover
@@ -429,6 +432,7 @@ summary{display:list-item}
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    color: #ffffff;
   }
   .section-portfolio-button + .section-portfolio-button {
     margin-left: 8px;
@@ -578,7 +582,6 @@ summary{display:list-item}
     line-height: 1.2;
     /* identical to box height */
     letter-spacing: 0.03em;
-  
     color: var(--accent-color);
   }
   
@@ -628,6 +631,7 @@ summary{display:list-item}
   ul
   {
     margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     list-style: none;
   }
@@ -733,49 +737,116 @@ summary{display:list-item}
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
-
-
-
-
-
-
-
-.footer-social-name {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
+.section-texxt{
+  text-align: center;
 }
-.footer-social-list {
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.header-contact-icons {
+  margin-right: 10px;
+  fill: currentColor;
+  
+}
+svg Attributes Style {
+  width: 10px;
+  height: 16px;
+}
+svg Attributes Style {
+  width: 70px;
+  height: 70px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.skill-list .skill-item .skill-wall {
+  background-color: var(--portfolio-button-color);
+  margin-bottom: 30px;
   display: flex;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 120px;
 }
-.footer-social {
-  margin-left: 70px;
-}
-.footer-social-link {
+
+.company-social-list .company-icon .company-social-icon {
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: var(--footer-icon-color);
-  fill: var(--primary-white-color);
-}
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
+  color: var(--accent-color);}
+
+  .company-social-list {
+    display: flex;
+    margin-top: 16px;
+  }
+  .company-icon1 {
+    fill: var(--social-icon-color);
+   
+  }
+
+.company-social-icon:hover .company-icon1,
+.company-social-icon:focus .company-icon1 {
+color: #ffffff;
 }
 
-.footer-section {
-  display: flex;
-  align-items: baseline;
+.company-icon + .company-icon {
+  margin-left: 10px;
 }
+.company-social-icon:hover,
+.company-social-icon:focus {
+  background-color: var(--accent-color);}
+
+  .client {
+    background-color: var(--primary-white-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0px auto;
+  }
+  .client-list {
+    display: flex;
+  }
+  .client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    fill: var(--social-icon-color);
+    border: 1px solid var(--social-icon-color);
+  }
+  .client-item + .client-item {
+    margin-left: 30px;
+  }
+  
+  .client-link:hover,
+  .client-link :focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  .client-icons :hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  .client-link :focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+
+  }
+
+  .section-hero-color{font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;}
