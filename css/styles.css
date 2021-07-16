@@ -45,6 +45,7 @@ summary{display:list-item}
     max-width: 1600px;
     margin: 0 auto;
     background: #2f303a;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../img/header-background.jpg);
   }
   
   .section-hero-color {
@@ -176,7 +177,6 @@ summary{display:list-item}
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--portfolio-color-title);
-
   }
   a.list-item-cheked {
     color: #212121;
@@ -192,8 +192,9 @@ summary{display:list-item}
   }
   .list-item .current {
     color: #2196f3;
-    text-decoration: none;
-  }
+    text-decoration: none; }
+
+  
   
   .header-nav
     a:hover
@@ -731,4 +732,50 @@ summary{display:list-item}
 .hero-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+
+
+
+
+
+
+
+
+.footer-social-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.footer-social-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-link {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--footer-icon-color);
+  fill: var(--primary-white-color);
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-section {
+  display: flex;
+  align-items: baseline;
 }
