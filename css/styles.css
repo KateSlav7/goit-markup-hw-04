@@ -836,7 +836,6 @@ color: #ffffff;
   .client-link :focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-
   }
 
   .section-hero-color{font-style: normal;
@@ -850,3 +849,4 @@ color: #ffffff;
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;}
+ 
