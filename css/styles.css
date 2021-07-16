@@ -25,7 +25,7 @@ summary{display:list-item}
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
     --accent-color: #2196f3;
-    -primary-white-color: #ffffff;
+    --primary-white-color: #ffffff;
     --text-footer: #ffffff99;
     --border-color: #ececec;
     --border-portfolio-color: #eeeeee;
@@ -756,6 +756,7 @@ svg Attributes Style {
 svg Attributes Style {
   width: 70px;
   height: 70px;
+  fill: var(--primary-white-color);
 }
 svg:not(:root) {
   overflow: hidden;
@@ -783,10 +784,7 @@ svg:not(:root) {
     display: flex;
     margin-top: 16px;
   }
-  .company-icon1 {
-    fill: var(--social-icon-color);
-   
-  }
+  
 
 .company-social-icon:hover .company-icon1,
 .company-social-icon:focus .company-icon1 {
@@ -817,8 +815,8 @@ color: #ffffff;
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    fill: var(--social-icon-color);
     border: 1px solid var(--social-icon-color);
+   
   }
   .client-item + .client-item {
     margin-left: 30px;
@@ -826,16 +824,13 @@ color: #ffffff;
   
   .client-link:hover,
   .client-link :focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   }
   .client-icons :hover {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   }
   .client-link :focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   }
 
   .section-hero-color{font-style: normal;
@@ -849,4 +844,57 @@ color: #ffffff;
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;}
- 
+
+  .footer-set-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+  .set-list {
+    display: flex;
+    margin-top: 20px;
+  }
+  .footer-set {
+    margin-left: 516px;
+    margin-right: 939px;
+  }
+  .set-link {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--footer-icon-color);
+    fill: var(--primary-white-color);
+  }
+  .set-item + .set-item {
+    margin-left: 10px;
+  }
+  .set-link:hover,
+  .set-link:focus {
+    background-color: var(--accent-color);
+  }
+.footer footer-set {
+  padding-top: 60px;
+    padding-bottom: 60px;
+    list-style: none;
+}
+
+  .footer-class {
+  display:block;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    right: 252px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;}
+    
