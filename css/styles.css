@@ -789,7 +789,6 @@ svg:not(:root) {
 .company-social-icon:hover .company-icon1,
 .company-social-icon:focus .company-icon1 {
 color: #ffffff;
-
 }
 
 .company-icon + .company-icon {
@@ -899,6 +898,7 @@ color: #ffffff;
 .container {
     width: 1200px;
     margin: 0 auto;}
+
 
 
     .client-icons {    display: flex;    justify-content: center;    align-items: center;    width: 100%;    height: 100%;    fill: #AFB1B8;
