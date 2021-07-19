@@ -35,9 +35,8 @@ summary{display:list-item}
     --hero-background-color: #2f303a;
     --footer-item-color: rgba(255, 255, 255, 0.6);
     --social-icon-color:#afb1b8;
-    --footer-icon-color: rgba(255, 255, 255, 0.1);
-  }
-  
+    --footer-icon-color: rgba(255, 255, 255, 0.1);}
+
   .section-hero-background {
     background-color: var(--hero-background-color);
     padding-top: 200px;
@@ -680,6 +679,7 @@ summary{display:list-item}
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #ffffff;
+    
   }
   
   .address-main {
@@ -798,6 +798,42 @@ svg:not(:root) {
   fill: #AFB1B8;}
 
 
+  .client {
+    background-color: var(--primary-white-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0px auto;
+  }
+  .client-list {
+    display: flex;
+  }
+  .client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--social-icon-color);
+   
+  }
+  .client-item + .client-item {
+    margin-left: 30px;
+  }
+  
+  .client-link:hover,
+  .client-link :focus {
+  border: 1px solid var(--accent-color);
+  }
+  .client-icons :hover {
+  border: 1px solid var(--accent-color);
+  }
+  .client-icons :focus {
+  border: 1px solid var(--accent-color);
+  }
+
+
   .section-hero-color{font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -822,9 +858,9 @@ svg:not(:root) {
     display: flex;
     margin-top: 20px;
   }
+  
   .footer-set {
-    margin-left: 516px;
-    margin-right: 939px;
+    margin-left: 70px;
   }
   .set-link {
     display: flex;
@@ -843,7 +879,7 @@ svg:not(:root) {
   .set-link:focus {
     background-color: var(--accent-color);
   }
-.footer footer-set {
+.footer .footer-set {
   padding-top: 60px;
     padding-bottom: 60px;
     list-style: none;
@@ -924,9 +960,6 @@ svg:not(:root) {
     }
 
 
-
-
-
     .footer-set-name {
       font-weight: 700;
       font-size: 14px;
@@ -965,3 +998,28 @@ svg:not(:root) {
       align-items: baseline;
     }
     
+    .container {  
+  width: 1200px;
+  margin: 0 auto;}
+
+.container2 {
+    margin-right: 70px;
+  display: flex;}
+  
+.set-link:hover,
+.set-link:focus {
+  color: #ffffff;
+}
+
+.set-link:focus .set-icons,
+.set-link:hover .set-icons {
+  fill: #ffffff;
+}
+
+
+.new-div {
+ 
+    display: flex;
+    align-items: baseline;
+}
+
