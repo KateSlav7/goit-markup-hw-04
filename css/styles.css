@@ -997,14 +997,13 @@ svg:not(:root) {
       display: flex;
       align-items: baseline;
     }
-    
-    .container {  
-  width: 1200px;
-  margin: 0 auto;}
 
-.container2 {
-    margin-right: 70px;
-  display: flex;}
+    .container {  
+width: 1200px;
+padding: 0 15px;
+margin: 0 auto;}
+
+
   
 .set-link:hover,
 .set-link:focus {
@@ -1017,9 +1016,4 @@ svg:not(:root) {
 }
 
 
-.new-div {
- 
-    display: flex;
-    align-items: baseline;
-}
 
