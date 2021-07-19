@@ -770,7 +770,6 @@ svg:not(:root) {
   border-radius: 4px;
   height: 120px;
 }
-
 .company-social-list .company-icon .company-social-icon {
   display: flex;
   border-radius: 50%;
@@ -788,50 +787,16 @@ svg:not(:root) {
 
 .company-social-icon:hover .company-icon1,
 .company-social-icon:focus .company-icon1 {
-color: #ffffff;
-}
+
+  color: #ffffff;}
 
 .company-icon + .company-icon {
   margin-left: 10px;
 }
 .company-social-icon:hover,
 .company-social-icon:focus {
-  background-color: var(--accent-color);}
+  fill: #AFB1B8;}
 
-  .client {
-    background-color: var(--primary-white-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-    max-width: 1600px;
-    margin: 0px auto;
-  }
-  .client-list {
-    display: flex;
-  }
-  .client-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid var(--social-icon-color);
-   
-  }
-  .client-item + .client-item {
-    margin-left: 30px;
-  }
-  
-  .client-link:hover,
-  .client-link :focus {
-  border: 1px solid var(--accent-color);
-  }
-  .client-icons :hover {
-  border: 1px solid var(--accent-color);
-  }
-  .client-link :focus {
-  border: 1px solid var(--accent-color);
-  }
 
   .section-hero-color{font-style: normal;
   font-weight: 900;
@@ -897,4 +862,106 @@ color: #ffffff;
 .container {
     width: 1200px;
     margin: 0 auto;}
+    
+
+    .company-list .company-item .company-social-icon {
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      color: var(--accent-color);
+    }
+    .company-list {
+      display: flex;
+      margin-top: 16px;
+    }
+    .company-icon1 {
+      fill: var(--social-icon-color);
+    }
+    .company-social-icon:hover .company-icon1,
+    .company-social-icon:focus .company-icon1 {
+      fill: var(--primary-white-color);
+    }
+    
+    .company-icon + .company-icon {
+      margin-left: 10px;
+    }
+    .company-social-icon:hover,
+    .company-social-icon:focus {
+      background-color: var(--accent-color);
+    }
+
+    .client {
+      background-color: var(--primary-white-color);
+      padding-top: 94px;
+      padding-bottom: 94px;
+      max-width: 1600px;
+      margin: 0px auto;
+    }
+    .client-list {
+      display: flex;
+    }
+    .client-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 92px;
+      border: 1px solid var(--social-icon-color);
+      border-radius: 4px;
+      fill: var(--social-icon-color);
+    }
+    .client-item + .client-item {
+      margin-left: 30px;
+    }
+    
+    .client-link:hover,
+    .client-link:focus {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
+
+
+
+
+
+    .footer-set-name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
+    .set-list {
+      display: flex;
+      margin-top: 20px;
+    }
+    .footer-set {
+      margin-left: 70px;
+    }
+    .set-link {
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: var(--footer-icon-color);
+      fill: var(--primary-white-color);
+    }
+    .set-item + .set-item {
+      margin-left: 10px;
+    }
+    .set-link:hover,
+    .set-link:focus {
+      background-color: var(--accent-color);
+    }
+    
+    .footer-container {
+      display: flex;
+      align-items: baseline;
+    }
     
