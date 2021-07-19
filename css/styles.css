@@ -739,6 +739,7 @@ summary{display:list-item}
 }
 .section-texxt{
   text-align: center;
+  color: var(--portfolio-color-title);
 }
 
 svg:not(:root) {
